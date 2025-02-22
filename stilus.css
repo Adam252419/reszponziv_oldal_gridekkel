@@ -1,4 +1,5 @@
-body {
+body { color: yellowgreen;
+}
    
 header {
     background-color: green;
@@ -20,19 +21,22 @@ a {
 
 nav {
     margin-bottom: 10px;
+    padding: 5px;
+    text-decoration: none;
+    
 
 }
 * {
     box-sizing: border-box;
 }
 img {
- 
-    border: 5px solid black;
+    width:100%
+    border 5px solid black;
     border-radius: 10px;
 }
 section {
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 5px solid black;
     border-radius: 15px;
     background-color: green;
@@ -42,14 +46,45 @@ p {
     border-radius: 10px;
     background-color: greenyellow;
 }
-article {
-    
-    gap: 10px;
-}
+
+
 #bekezdes_footer {
     background-color: green;
     border: 5px solid black;
     font-size: large;
 }
+header{
+    border: 5px solid black;
+    text-align: center;
 
+}
+a:hover{
+    color: greenyellow;
+}
+#elso_section.img{
+    width: 100%;
+    height: 100%;
+}
 
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    
+    @media screen and (max-width: 800px) {
+        article{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+    }
+    @media screen and (max-width: 500px) {
+        article{
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 10px;
+        }
+        
+    }
+}
